@@ -1,32 +1,32 @@
 var EATING_SOUND = new buzz.sound([
-    "./assets/sound/eating.mp3" 
+    "static/assets/sound/eating.mp3" 
 ]);
 var GHOST_EATEN_SOUND = new buzz.sound([
-	"./assets/sound/ghost-eaten.mp3" 
+	"static/assets/sound/ghost-eaten.mp3" 
 ]);
 var EXTRA_LIFE_SOUND = new buzz.sound([
-    "./assets/sound/extra-life.mp3" 
+    "static/assets/sound/extra-life.mp3" 
 ]);
 var EAT_PILL_SOUND = new buzz.sound([
-    "./assets/sound/eat-pill.mp3" 
+    "static/assets/sound/eat-pill.mp3" 
 ]);
 var EAT_FRUIT_SOUND = new buzz.sound([
-    "./assets/sound/eat-fruit.mp3" 
+    "static/assets/sound/eat-fruit.mp3" 
 ]);
 var EAT_GHOST_SOUND = new buzz.sound([
-    "./assets/sound/eat-ghost.mp3" 
+    "static/assets/sound/eat-ghost.mp3" 
 ]);
 var SIREN_SOUND = new buzz.sound([
-    "./assets/sound/siren.mp3" 
+    "static/assets/sound/siren.mp3" 
 ]);
 var WAZA_SOUND = new buzz.sound([
-    "./assets/sound/waza.mp3" 
+    "static/assets/sound/waza.mp3" 
 ]);
 var READY_SOUND = new buzz.sound([
-    "./assets/sound/ready.mp3" 
+    "static/assets/sound/ready.mp3" 
 ]);
 var DIE_SOUND = new buzz.sound([
-    "./assets/sound/die.mp3" 
+    "static/assets/sound/die.mp3" 
 ]);
 
 var GROUP_SOUND = new buzz.group( [ EATING_SOUND, SIREN_SOUND, EAT_PILL_SOUND, EAT_GHOST_SOUND, READY_SOUND, DIE_SOUND, WAZA_SOUND, GHOST_EATEN_SOUND, EXTRA_LIFE_SOUND, EAT_FRUIT_SOUND ] );
