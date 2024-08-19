@@ -209,10 +209,10 @@ function canMovePacman(direction) {
 
 // Pré-carregar as imagens de Pacman
 var pacmanOpenMouthImg = new Image();
-pacmanOpenMouthImg.src = 'img/latido.png'; // Substitua pelo caminho da imagem de boca aberta
+pacmanOpenMouthImg.src = "{% static 'assets/img/latido.png' %}"; // Substitua pelo caminho da imagem de boca aberta
 
 var pacmanClosedMouthImg = new Image();
-pacmanClosedMouthImg.src = 'img/latido1.png'; // Substitua pelo caminho da imagem de boca fechada
+pacmanClosedMouthImg.src = "{% static 'assets/img/latido1.png' %}"; // Substitua pelo caminho da imagem de boca fechada
 
 // Variável de controle para alternar a boca
 var PACMAN_MOUTH_STATE = 0;

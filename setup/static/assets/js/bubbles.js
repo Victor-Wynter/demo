@@ -35,7 +35,7 @@ function drawBubbles() {
 
 	var ctx = getBubblesCanevasContext();
 	var boneImage = new Image();
-	boneImage.src = 'img/osso.png'; // Caminho para a imagem do osso
+	boneImage.src = "{% static 'assets/img/osso.png' %}"; // Caminho para a imagem do osso
 	
 	boneImage.onload = function() {
 		for (var line = 1, linemax = 29, i = 0, s = 0; line <= linemax; line++) { 
@@ -101,7 +101,7 @@ function blinkSuperBubbles() {
 
         var ctx = getBubblesCanevasContext();
         var boneImage = new Image();
-        boneImage.src = 'img/osso.png';
+        boneImage.src = "{% static 'assets/img/osso.png' %}";
 
         boneImage.onload = function() {
             for (var i = 0, imax = SUPER_BUBBLES.length; i < imax; i++) {

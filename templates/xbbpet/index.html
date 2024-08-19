@@ -19,20 +19,20 @@
 		<link rel="stylesheet" type="text/css" href="{% static 'styles/css/pacman.css' %}" />
 		<link rel="stylesheet" type="text/css" href="{% static 'styles/css/pacman-home.css' %}" />
 	
-		<script type="text/javascript" src="assets/js/jquery.js"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery.js' %}"></script>
 		<!--<script type="text/javascript" src="js/jquery-mobile.js"></script>-->
-		<script type="text/javascript" src="assets/js/jquery-buzz.js"></script>
+		<script type="text/javascript" src="{% static 'assets/js/jquery-buzz.js' %}"></script>
 		
-		<script type="text/javascript" src="assets/js/game.js"></script>
-		<script type="text/javascript" src="assets/js/tools.js"></script>
-		<script type="text/javascript" src="assets/js/board.js"></script>
-		<script type="text/javascript" src="assets/js/paths.js"></script>
-		<script type="text/javascript" src="assets/js/bubbles.js"></script>
-		<script type="text/javascript" src="assets/js/fruits.js"></script>
-		<script type="text/javascript" src="assets/js/pacman.js"></script>
-		<script type="text/javascript" src="assets/js/ghosts.js"></script>
-		<script type="text/javascript" src="assets/js/home.js"></script>
-		<script type="text/javascript" src="assets/js/sound.js"></script>
+		<script type="text/javascript" src="{% static 'assets/js/game.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/tools.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/board.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/paths.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/bubbles.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/fruits.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/pacman.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/ghosts.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/home.js' %}"></script>
+		<script type="text/javascript" src="{% static 'assets/js/sound.js' %}"></script>
 		
 		<script type="text/javascript">		
 			
@@ -61,11 +61,11 @@
 					var sound = $(this).attr("data-sound");
 					if ( sound === "on" ) { 
 						$(".sound").attr("data-sound", "off");
-						$(".sound").find("img").attr("src", "img/sound-off.png");
+						$(".sound").find("img").attr("src", "{% static 'assets/img/sound-off.png' %}");
 						GROUP_SOUND.mute();
 					} else { 
 						$(".sound").attr("data-sound", "on");
-						$(".sound").find("img").attr("src", "img/sound-on.png");
+						$(".sound").find("img").attr("src", "{% static 'assets/img/sound-on.png' %}");
 						GROUP_SOUND.unmute();
 					}
 				});

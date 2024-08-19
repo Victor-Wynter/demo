@@ -372,8 +372,8 @@ function getPacmanTrailerCanevasContext() {
 // Carrega as duas imagens do cachorro (boca aberta e boca fechada) fora da função de animação
 var imgOpenMouth = new Image();
 var imgClosedMouth = new Image();
-imgOpenMouth.src = 'img/latido.png'; // Caminho da imagem do cachorro com boca aberta
-imgClosedMouth.src = 'img/latido1.png'; // Caminho da imagem do cachorro com boca fechada
+imgOpenMouth.src = "{% static 'assets/img/latido.png' %}"; // Caminho da imagem do cachorro com boca aberta
+imgClosedMouth.src = "{% static 'assets/img/latido1.png' %}"; // Caminho da imagem do cachorro com boca fechada
 
 function drawPacmanTrailer() {
     var ctx = getPacmanTrailerCanevasContext();
