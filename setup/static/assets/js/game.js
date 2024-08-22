@@ -325,32 +325,7 @@ function gameover() {
 
     LIFES = 2;
     LEVEL = 1;
-    
-    // Solicitar o nome do jogador
-    var playerName = prompt("Enter your name:"); // Pede o nome do jogador
-    if (playerName !== null && playerName.trim() !== "") {
-        // Recuperar a pontuação mais alta do localStorage
-        var highscore = parseInt(localStorage.getItem('highscore')) || 0;
-        console.log("Current Score:", SCORE);
-        console.log("Highscore Before Update:", highscore);
-        if (SCORE > highscore) {
-            // Atualizar a pontuação mais alta e o nome do jogador no localStorage
-            localStorage.setItem('highscore', SCORE);
-            localStorage.setItem('playerName', playerName);
-            console.log("New Highscore:", SCORE);
-            console.log("New Player Name:", playerName);
-        }
-    }
-
-    // Redirecionar para a página de ranking após um breve atraso
-    setTimeout(function() {
-        window.location.href = "ranking.html";
-    }, 2000); // O atraso é de 2 segundos, ajuste conforme necessário
 }
-
-console.log("Stored Player Name:", localStorage.getItem('playerName'));
-console.log("Stored Highscore:", localStorage.getItem('highscore'));
-
 
 function message(m) { 
 	$("#message").html(m);

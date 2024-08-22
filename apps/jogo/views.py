@@ -6,4 +6,4 @@ def index(request):
         messages.error(request, 'Jogador não logado')
         return redirect('login')
 
-    return render(request, 'login.html')
+    return render(request, 'xbbpet/index.html')

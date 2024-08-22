@@ -15,18 +15,20 @@ def login(request):
         form = LoginForms(request.POST)
 
         if form.is_valid():
-            nome = form['nickname'].value()
+            nome = form['nome_login'].value()
+            senha = form['senha'].value()
 
         usuario = auth.authenticate(
             request,
             username=nome,
+            password=senha
         )
         if usuario is not None:
             auth.login(request, usuario)
-            messages.success(request, f'{nome} pronto para jogar!')
+            messages.success(request, f'{nome} logado com sucesso!')
             return redirect('index')
         else:
-            messages.error(request, 'Erro')
+            messages.error(request, 'Erro ao efetuar login')
             return redirect('login')
 
     return render(request, 'usuarios/login.html', {'form': form})
@@ -40,6 +42,7 @@ def cadastro(request):
         if form.is_valid():
             nome=form['nome_cadastro'].value()
             email=form['email'].value()
+            senha=form['senha_1'].value()
 
             if User.objects.filter(username=nome).exists():
                 messages.error(request, 'Usuário já existente')
@@ -48,6 +51,7 @@ def cadastro(request):
             usuario = User.objects.create_user(
                 username=nome,
                 email=email,
+                password=senha
             )
             usuario.save()
             messages.success(request, 'Cadastro efetuado com sucesso!')
