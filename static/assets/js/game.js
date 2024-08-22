@@ -295,7 +295,7 @@ function lifes(l) {
 	if (canvas.getContext) { 
 		var ctx = canvas.getContext('2d');
 		var img = new Image();
-		img.src = "{% static 'assets/img/latido.png' %}"; // Substitua pelo caminho da sua imagem
+		img.src =  'static/assets/img/latido.png'; // Substitua pelo caminho da sua imagem
 		
 		img.onload = function() {
 			ctx.clearRect(0, 0, 120, 30);

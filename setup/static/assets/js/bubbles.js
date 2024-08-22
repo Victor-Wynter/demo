@@ -101,7 +101,7 @@ function blinkSuperBubbles() {
 
         var ctx = getBubblesCanevasContext();
         var boneImage = new Image();
-        boneImage.src = "{% static 'assets/img/osso.png' %}";
+        boneImage.src =  'static/assets/img/osso.png';
 
         boneImage.onload = function() {
             for (var i = 0, imax = SUPER_BUBBLES.length; i < imax; i++) {

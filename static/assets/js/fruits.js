@@ -269,7 +269,7 @@ function drawBell(ctx, x, y, size) {
 function drawGalboss(ctx, x, y, size) { 
 		// Crie um objeto de imagem
 		const cherryImage = new Image();
-		cherryImage.src = "{% static 'assets/img/pote.png' %}"; // Substitua com o caminho da sua imagem
+		cherryImage.src =  'static/assets/img/pote.png'; // Substitua com o caminho da sua imagem
 	
 		// Desenhe a imagem no canvas quando ela estiver carregada
 		cherryImage.onload = function() {
@@ -285,7 +285,7 @@ function drawGalboss(ctx, x, y, size) {
 function drawMelon(ctx, x, y, size) { 
 		// Crie um objeto de imagem
 		const cherryImage = new Image();
-		cherryImage.src = "{% static 'assets/img/pilula.png' %}"; // Substitua com o caminho da sua imagem
+		cherryImage.src =  'static/assets/img/pilula.png'; // Substitua com o caminho da sua imagem
 	
 		// Desenhe a imagem no canvas quando ela estiver carregada
 		cherryImage.onload = function() {
@@ -301,7 +301,7 @@ function drawMelon(ctx, x, y, size) {
 function drawApple(ctx, x, y, size) { 
 		// Crie um objeto de imagem
 		const cherryImage = new Image();
-		cherryImage.src = "{% static 'assets/img/d3.png' %}"; // Substitua com o caminho da sua imagem
+		cherryImage.src =  'static/assets/img/d3.png'; // Substitua com o caminho da sua imagem
 	
 		// Desenhe a imagem no canvas quando ela estiver carregada
 		cherryImage.onload = function() {
@@ -317,7 +317,7 @@ function drawApple(ctx, x, y, size) {
 function drawOrange(ctx, x, y, size) {
     // Crie um objeto de imagem
     const cherryImage = new Image();
-    cherryImage.src = "{% static 'assets/img/pote.png' %}"; // Substitua com o caminho da sua imagem
+    cherryImage.src =  'static/assets/img/pote.png'; // Substitua com o caminho da sua imagem
 
     // Desenhe a imagem no canvas quando ela estiver carregada
     cherryImage.onload = function() {
@@ -333,7 +333,7 @@ function drawOrange(ctx, x, y, size) {
 function drawStrawberry(ctx, x, y, size) {
     // Crie um objeto de imagem
     const cherryImage = new Image();
-    cherryImage.src = "{% static 'assets/img/pilula.png' %}"; // Substitua com o caminho da sua imagem
+    cherryImage.src =  'static/assets/img/pilula.png'; // Substitua com o caminho da sua imagem
 
     // Desenhe a imagem no canvas quando ela estiver carregada
     cherryImage.onload = function() {
@@ -348,7 +348,7 @@ function drawStrawberry(ctx, x, y, size) {
 function drawCherry(ctx, x, y, size) {
     // Crie um objeto de imagem
     const cherryImage = new Image();
-    cherryImage.src = "{% static 'assets/img/d3.png' %}"; // Substitua com o caminho da sua imagem
+    cherryImage.src =  'static/assets/img/d3.png'; // Substitua com o caminho da sua imagem
 
     // Desenhe a imagem no canvas quando ela estiver carregada
     cherryImage.onload = function() {
