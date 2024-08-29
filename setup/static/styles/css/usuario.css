@@ -1,14 +1,8 @@
-/* Reseta o estilo padrão */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilo global */
+/* Estilo global inspirado no Pac-Man */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000; /* Fundo preto */ 
+    color: #fff; /* Texto branco */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,67 +10,82 @@ body {
     margin: 0;
 }
 
-.form-container {
-    background-color: white;
-    padding: 40px;
+/* Container da página inicial */
+.pagina-inicial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* Logo */
+.img-logo img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Container do formulário */
+.galeria {
+    background-color: #151515; /* Fundo preto escuro */
+    padding: 50px;
+    padding-right: 60px;
     border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px rgba(255, 255, 0, 0.5); /* Sombra amarela */
     width: 320px;
     text-align: center;
+    border: 3px solid #ffcc00; /* Bordas amarelas */
 }
 
-h2 {
-    margin-bottom: 20px;
-    color: #333;
-    font-size: 24px;
-}
-
+/* Estilo dos inputs */
 input[type="text"], input[type="password"] {
     width: 100%;
     padding: 10px;
     margin: 15px 0;
-    border: 1px solid #ddd;
+    border: 2px solid #ffcc00; /* Bordas amarelas */
     border-radius: 5px;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
     font-size: 16px;
 }
 
-input[type="submit"] {
+/* Estilo do botão */
+input[type="submit"], .btn-success {
     width: 100%;
     padding: 10px;
     border: none;
-    background-color: #5cb85c;
-    color: white;
+    background-color: #ffcc00; /* Fundo amarelo */
+    color: #000; /* Texto preto */
     font-size: 18px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
-    background-color: #4cae4c;
+input[type="submit"]:hover, .btn-success:hover {
+    background-color: #ffe066; /* Fundo amarelo claro */
 }
 
-.form-footer {
+/* Links de navegação */
+a {
+    color: #ffcc00; /* Link amarelo */
+    text-decoration: none;
     margin-top: 20px;
 }
 
-.form-footer a {
-    color: #5cb85c;
-    text-decoration: none;
-}
-
-.form-footer a:hover {
+a:hover {
     text-decoration: underline;
 }
 
 /* Estilo de erro */
 .error {
-    color: red;
+    color: #ff4d4d; /* Vermelho vibrante */
     font-size: 14px;
 }
 
 /* Responsividade */
 @media (max-width: 400px) {
-    .form-container {
+    .galeria {
         width: 100%;
         padding: 20px;
     }

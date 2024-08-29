@@ -2,6 +2,9 @@
 {% load static %}
 {% block content %}
 <section class="galeria" style="margin-left: 5em">
+    <div class="img-logo">
+        <img src="{% static 'assets/img/XBBPET.png' %}" alt="Logo">
+    </div>
     <form action="{% url 'cadastro' %}" method="POST">
         {% csrf_token %}
         <div class="row">

@@ -8,18 +8,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static '/styles/usuario.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/usuario.css' %}">
 </head>
 
 <body>
     <div class="pagina-inicial">
-        <header class="cabecalho">
-            <img src="{% static '/assets/logo/Logo(2).png' %}" alt="Logo da Alura Space" />
+        <header class="cabecalho">            
             {% for message in messages %}
             <div class="alert alert-primary">
                 <p id="messages">{{message}}</p>
@@ -27,7 +22,10 @@
             {% endfor %}
         </header>
         <main class="principal">
-            <section class="galeria" style="margin-left: 5em">
+            <section class="galeria">
+                <div class="img-logo">
+                    <img src="{% static 'assets/img/XBBPET.png' %}" alt="Logo">
+                </div>
                 <form action="{% url 'login' %}" method="POST">
                     {% csrf_token %}
                     <div class="row">
@@ -39,11 +37,12 @@
                         {% endfor %}
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-success col-12" style="padding: top 5px;">Logar</button>
+                        <button type="submit" class="btn btn-success col-12">Logar</button>
                     </div>
                 </form>
+                <p></p>
+                <a href="{% url 'cadastro' %}">Cadastro</a>
             </section>
-            <a href="{% url 'cadastro' %}">Cadastro</a>
         </main>
     </div>
 </body>
