@@ -39,7 +39,7 @@ body {
 }
 
 /* Estilo dos inputs */
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"], input[type="email"] {
     width: 100%;
     padding: 10px;
     margin: 15px 0;
@@ -49,6 +49,7 @@ input[type="text"], input[type="password"] {
     color: #fff; /* Texto branco */
     font-size: 16px;
 }
+
 
 /* Estilo do botão */
 input[type="submit"], .btn-success {
