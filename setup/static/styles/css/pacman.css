@@ -377,6 +377,7 @@ h3 {
 	} 
 
 }
+
 @media screen and (max-height:640px), screen and (min-device-height : 480px) and (max-device-height : 640px) and (-webkit-device-pixel-ratio: 3) { 
 	#panel, #home { 
 		zoom: 60%;
@@ -391,6 +392,8 @@ h3 {
 		visibility: hidden;
 	}
 }
+
+
 @media screen and (max-height:480px), screen and (min-device-height : 320px) and (max-device-height : 480px) { 
 	#panel, #home { 
 		zoom: 55%;
