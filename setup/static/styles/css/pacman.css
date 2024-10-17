@@ -409,8 +409,7 @@ h3 {
 }
 @media screen and (max-height:480px), screen and (min-device-height : 320px) and (max-device-height : 480px) { 
 	#panel, #home { 
-		zoom: 15%;
-		margin: 0 auto; /* Centraliza o painel */
+		zoom: 55%;
 	}
 	#control-up-big, #control-down-big, #control-left-big, #control-right-big { 
 		display: inline; 
@@ -419,32 +418,28 @@ h3 {
 		display: none;
 	}
 	#score, #highscore { 
-		top: 10px; /* Ajusta a posição para melhor visibilidade */
-        font-size: 20px; /* Aumenta a fonte para melhor legibilidade */
+		top: 0px;
 	}
 	#panel { 
-		padding-top: 20px; /* Reduz o espaço no topo para maximizar espaço útil */
-        height: 400px; /* Define altura fixa para o painel do jogo */
-        overflow: hidden; /* Oculta qualquer conteúdo excedente */
+		padding-top: 50px;
 	}
 	#canvas-lifes, #canvas-level-fruits { 
-		top: 500px;
+		top: 607px;
 	}
 	#control { 
-		bottom: 20px; /* Ajusta a posição dos controles */
-        width: 100%; /* Largura total para melhor acesso */
-        height: 60px; /* Aumenta a altura para botões maiores */
-        display: flex; /* Usa flexbox para alinhar os botões */
-        justify-content: space-around; /* Distribui os botões igualmente */
+		bottom: 50px;
+		width: 550px;
+		height: 55px;
 	}
 	#control-up, #control-down, #control-left, #control-right { 
-		background-size: 48px; /* Mantém o tamanho do fundo dos botões */
-        width: 60px; /* Aumenta a largura dos botões */
-        height: 60px; /* Aumenta a altura dos botões */
-        padding: 5px; /* Mantém o padding */
+		top: 0px;
+		bottom: 0px;
+		background-size: 48px;
+		width: 48px;
+		height: 48px;
+		padding: 5px;
 	}
 	#message { 
-		top: 350px; /* Ajusta a posição da mensagem */
-        font-size: 18px; /* Aumenta o tamanho da fonte */
+		top: 347px;
 	}
 }
