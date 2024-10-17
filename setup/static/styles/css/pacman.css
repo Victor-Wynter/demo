@@ -161,34 +161,28 @@ span.combo, span.fruits {
 #control-up { 
 	top: 0px;
 	left: 70px;
-	background-image: url('../img/move-up.png');
 }
 #control-down { 
 	bottom: 0px;
 	right: 70px;
-	background-image: url('../img/move-down.png');
 }
 #control-up-second { 
 	top: 0px;
 	right: 70px;
-	background-image: url('../img/move-up.png');
 }
 #control-down-second{ 
 	bottom: 0px;
 	left: 70px;
-	background-image: url('../img/move-down.png');
 }
 #control-left { 
 	bottom: 0px;
 	top: 0px;
 	left: 0px;
-	background-image: url('../img/move-left.png');
 }
 #control-right { 
 	bottom: 0px;
 	top: 0px;
 	right: 0px;
-	background-image: url('../img/move-right.png');
 }
 
 #control-up-big, #control-down-big, #control-left-big, #control-right-big { 
@@ -206,7 +200,6 @@ span.combo, span.fruits {
 	right: 0px;
 	width: 125px;
 	height: 125px;
-	background-image: url('../img/move-up-big.png');
 }
 #control-down-big { 
 	bottom: -120px;
@@ -214,21 +207,18 @@ span.combo, span.fruits {
 	right: 0px;
 	width: 125px;
 	height: 125px;
-	background-image: url('../img/move-down-big.png');
 }
 #control-left-big { 
 	left: 80px;
 	bottom: -90px;
 	width: 125px;
 	height: 175px;
-	background-image: url('../img/move-left-big.png');
 }
 #control-right-big { 
 	right: 80px;
 	bottom: -90px;
 	width: 125px;
 	height: 175px;
-	background-image: url('../img/move-right-big.png');
 }
 
 
