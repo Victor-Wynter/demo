@@ -377,6 +377,22 @@ h3 {
 	} 
 
 }
+
+@media screen and (max-width:420px), screen and (min-device-width : 920px) and (max-device-width : 420px) { 
+	#panel, #home { 
+		zoom: 60%;
+	}
+	#control-up-big, #control-down-big, #control-left-big, #control-right-big { 
+		display: inline; 
+	} 
+	#home .help-button, #panel .help-button, #home .github, #sound, .sound { 
+		display: none;
+	}
+	h1, #canvas-panel-title-pacman { 
+		visibility: hidden;
+	}
+}
+
 @media screen and (max-height:640px), screen and (min-device-height : 480px) and (max-device-height : 640px) and (-webkit-device-pixel-ratio: 3) { 
 	#panel, #home { 
 		zoom: 60%;
@@ -393,7 +409,8 @@ h3 {
 }
 @media screen and (max-height:480px), screen and (min-device-height : 320px) and (max-device-height : 480px) { 
 	#panel, #home { 
-		zoom: 55%;
+		zoom: 15%;
+		margin: 0 auto; /* Centraliza o painel */
 	}
 	#control-up-big, #control-down-big, #control-left-big, #control-right-big { 
 		display: inline; 
@@ -402,28 +419,32 @@ h3 {
 		display: none;
 	}
 	#score, #highscore { 
-		top: 0px;
+		top: 10px; /* Ajusta a posição para melhor visibilidade */
+        font-size: 20px; /* Aumenta a fonte para melhor legibilidade */
 	}
 	#panel { 
-		padding-top: 50px;
+		padding-top: 20px; /* Reduz o espaço no topo para maximizar espaço útil */
+        height: 400px; /* Define altura fixa para o painel do jogo */
+        overflow: hidden; /* Oculta qualquer conteúdo excedente */
 	}
 	#canvas-lifes, #canvas-level-fruits { 
-		top: 607px;
+		top: 500px;
 	}
 	#control { 
-		bottom: 50px;
-		width: 550px;
-		height: 55px;
+		bottom: 20px; /* Ajusta a posição dos controles */
+        width: 100%; /* Largura total para melhor acesso */
+        height: 60px; /* Aumenta a altura para botões maiores */
+        display: flex; /* Usa flexbox para alinhar os botões */
+        justify-content: space-around; /* Distribui os botões igualmente */
 	}
 	#control-up, #control-down, #control-left, #control-right { 
-		top: 0px;
-		bottom: 0px;
-		background-size: 48px;
-		width: 48px;
-		height: 48px;
-		padding: 5px;
+		background-size: 48px; /* Mantém o tamanho do fundo dos botões */
+        width: 60px; /* Aumenta a largura dos botões */
+        height: 60px; /* Aumenta a altura dos botões */
+        padding: 5px; /* Mantém o padding */
 	}
 	#message { 
-		top: 347px;
+		top: 350px; /* Ajusta a posição da mensagem */
+        font-size: 18px; /* Aumenta o tamanho da fonte */
 	}
 }
