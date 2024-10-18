@@ -378,6 +378,22 @@ h3 {
 
 }
 
+@media screen and (max-width:420px), screen and (min-device-width : 920px) and (max-device-width : 420px) { 
+	#panel, #home { 
+		zoom: 60%;
+	}
+	#control-up-big, #control-down-big, #control-left-big, #control-right-big { 
+		display: inline; 
+	} 
+	#home .help-button, #panel .help-button, #home .github, #sound, .sound { 
+		display: none;
+	}
+	h1, #canvas-panel-title-pacman { 
+		visibility: hidden;
+	}
+
+}
+
 @media screen and (max-height:640px), screen and (min-device-height : 480px) and (max-device-height : 640px) and (-webkit-device-pixel-ratio: 3) { 
 	#panel, #home { 
 		zoom: 60%;
